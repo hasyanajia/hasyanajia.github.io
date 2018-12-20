@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+
+    <title>Portfolio</title>
+  </head>
+  <body>
+  <div class="tab">
+    <img width="200px" height="auto" src="image/me.jpg">
+  <button class="tablinks" onclick="openTab(event, 'aboutMe')" id="defaultOpen">About Me</button>
+  <button class="tablinks" onclick="openTab(event, 'skills')">Skills</button>
+  <button class="tablinks" onclick="openTab(event, 'education')">Education</button>
+</div>
+</div>
+
+  <div id="aboutMe" class="tabcontent">
+    <h1>About Me</h1><center>
+      <div class="info">
+        <table style="width:70%">
+        <tr>
+          <th>Name</th>
+          <td>:</td>
+          <td>Hasya Najia binti Yahya Khan</td>
+        </tr>
+        <tr>
+          <th>Age</th>
+          <td>:</td>
+          <td>20 years old</td>
+        </tr>
+        <tr>
+          <th>Matric No</th>
+          <td>:</td>
+          <td>1718172</td>
+        </tr>
+        <tr>
+          <th>Course</th>
+          <td>:</td>
+          <td>Bachelor of Computer Science</td>
+        </tr>
+        <tr>
+          <th>Date of Birth</th>
+          <td>:</td>
+          <td>5th December 1998</td>
+        </tr>
+        <tr>
+          <th>Hometown</th>
+          <td>:</td>
+          <td>Kuala Rompin, Pahang</td>
+        </tr>
+  </table>
+      </div>
+        </center>
+  <center><blockquote>
+    The only way to change the future is to change the present
+  </blockquote>
+  <h3>Contact Me</h3>
+  <p>Email:</p> <a href=mailto:hasyanajiaa@gmail.com> hasyanajiaa@gmail.com</a><br> <br>
+  <a href="https://www.instagram.com/hasyanajia/" target="_blank"><img src="image/instaicon.png" class="icon"></a>
+  <a href="https://twitter.com/hasya_najia" target="_blank"><img src="image/twittericon.png" class="icon"></a>
+  <a href="https://www.facebook.com/hasyanajiaa" target="_blank"><img src="image/fbicon.png" class="icon"></a></center>
+
+  </div>
+
+  <div id="skills" class="tabcontent">
+    <h1>Skills</h1>
+    <center><table style="height:80%">
+      <tr><td><img src="image/javaicon.png" alt=""></td><td>Java</td></tr>
+      <tr><td><img src="image/cicon.png" alt=""><td>C</td></tr>
+      <tr><td><img src="image/c++icon.png" alt=""><td>C++</td></tr>
+      <tr><td><img src="image/htmlicon.png" alt=""><td>HTML</td></tr>
+      <tr><td><img src="image/cssicon.png" alt=""><td>CSS</td></tr>
+      <tr><td><img src="image/javascripticon.png" alt=""><td>Javascript</td></tr>
+      <tr><td><img src="image/sqlicon.png" alt=""><td>SQL</td></tr>
+    </table></center>
+    <h1>Achievement</h1>
+      <ul>
+        <li>Sub-committee for Final Year Project Showcase 2018 at KICT, IIUM</li>
+        <li>ACMPC National Programming Competition 2018 at KICT, IIUM</li>
+        <li>Joined Choir Competition State Level 2012 at Jerantut</li>
+      </ul>
+
+  </div>
+
+  <div id="education" class="tabcontent">
+    <h1>Education</h1>
+    <div class="content">
+      <h4>Primary School</h4>
+      <p>SK Kampung Kolam, Kuala Rompin, Pahang (2005-2010)</p>
+      <hr>
+      <h4>Secondary School</h4>
+      <p>SMK Rompin Permai, Kuala Rompin, Pahang (2011-2015)</p>
+      <hr>
+      <h4>Foundation</h4>
+      <p>Centre for Foundation Studies IIUM, Petaling Jaya (2017-2017)</p>
+      <hr>
+      <h4>Bachelor Degree</h4>
+      <p>International Islamic University Malaysia, Gombak (2017-present)</p>
+
+    </div>
+  </div>
+
+  <script>
+function openTab(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+  </body>
+</html>
